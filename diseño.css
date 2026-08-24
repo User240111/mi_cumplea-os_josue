@@ -103,26 +103,29 @@ header::before {
         TITULO PRINCIPAL
 ============================== */
 
-.titulo h3 {
+.titulo h1 {
     color: #ffffff;
 
-    font-size: clamp(4rem, 10vw, 8rem);
+    font-size: clamp(4rem, 7vw, 8rem);
 
-    line-height: 0.95;
+    line-height: 0.90;
 
     max-width: 1200px;
 
-    font-weight: 800;
+    font-weight: 900;
 
-    letter-spacing: -4px;
+    letter-spacing: -5px;
+
+    text-transform: uppercase;
 }
 
-.titulo h3 span {
+
+.titulo h1 span {
     color: #0059ff;
 
     text-shadow:
         0 0 10px rgba(0, 89, 255, 0.6),
-        0 0 30px rgba(0, 89, 255, 0.3);
+        0 0 30px rgba(0, 89, 255, 0.35);
 }
 
 
@@ -184,27 +187,64 @@ header::before {
 
 @media (max-width: 600px) {
 
+    .hero {
+        min-height: 100svh;
+
+        padding: 20px 0;
+    }
+
+
     .titulo {
-        width: 95%;
-        padding: 15px;
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 20px 15px;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
     }
 
-    .titulo h3 {
 
-        font-size: clamp(2.8rem, 14vw, 4.5rem);
+    .pequeno {
 
-        letter-spacing: -2px;
+        margin-bottom: 22px;
 
-        line-height: 0.98;
+        font-size: 10px;
+
+        letter-spacing: 2px;
     }
+
+
+    .titulo h1 {
+
+        width: 100%;
+
+        font-size: clamp(3.8rem, 16vw, 5.5rem);
+
+        line-height: 0.88;
+
+        letter-spacing: -3px;
+    }
+
 
     .titulo p {
 
+        width: 100%;
+
+        max-width: 360px;
+
+        margin-top: 28px;
+
         font-size: 1rem;
 
-        line-height: 1.6;
-
-        margin-top: 25px;
+        line-height: 1.55;
     }
 
 }
@@ -252,6 +292,68 @@ header::before {
 
 
 /* Flecha */
+
+.flecha {
+    position: absolute;
+
+    bottom: 160px;
+    left: 70%;
+
+    transform: translateX(-50%);
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    animation: bajar 1.5s ease-in-out infinite;
+}
+
+.decoracion-1{
+    position: absolute;
+
+    bottom: 160px;
+    right: 70%;
+
+    transform: translateX(-50%);
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    animation: bajar 1.5s ease-in-out infinite;
+}
+
+.decoracion-2{
+    position: absolute;
+
+    bottom: 160px;
+    right: 68%;
+
+    transform: translateX(-50%);
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    animation: bajar 1.5s ease-in-out infinite;
+}
+
+.decoracion-3{
+    position: absolute;
+
+    bottom: 160px;
+    right: 72%;
+
+    transform: translateX(-50%);
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    animation: bajar 1.5s ease-in-out infinite;
+}
+
+
 
 .btn-invitacion span {
 
