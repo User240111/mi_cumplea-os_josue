@@ -226,7 +226,7 @@ header::before {
 
         width: 100%;
 
-        font-size: clamp(3.8rem, 16vw, 5.5rem);
+        font-size: clamp(3.8rem, 10vw, 5.5rem);
 
         line-height: 0.88;
 
